@@ -26,9 +26,14 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <link href="assets/css/overlay.css" rel="stylesheet">
+
 </head>
+
+
 
 <body>
 
@@ -185,7 +190,7 @@
               </ul>
             </div>
             <div class="resume-item">
-              <h4>High school diploma in computer science</h4>
+              <h4>High school diploma in computer science <span style="color: #dbcc79;">100/100</span></h4>
               <h5>2016 - 2021</h5>
               <p><em>Piero Gobetti, Scandiano, IT</em></p>
               <ul>
@@ -216,8 +221,9 @@
 
     <!-- ======= Skills Section ======= -->
     
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
+    <section id="skills" class="skills section-bg" data-aos="fade-up">
+
+      <div class="container overlay">
 
         <div class="section-title">
           <h2>Skills</h2>
@@ -491,12 +497,28 @@
           </div>
 
         </div>
-
       </div>
+
+      <div id="show-more">
+        Show more
+      </div>
+
+      <script>
+
+        var showMoreBtn = document.getElementById("show-more");
+        var overlay = document.getElementsByClassName("overlay")[0];
+
+        showMoreBtn.addEventListener("click", () => {
+          showMoreBtn.style.display = "none";
+          overlay.classList.remove("overlay");
+        });
+
+      </script>
+
     </section><!-- End Skills Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <!--<section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -508,7 +530,7 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-videogame">Card</li>
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
@@ -516,15 +538,15 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-videogame">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/how-i-became-the-hero.webp" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>How I became the Hero</h4>
+                <p>Videogame</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/how-i-became-the-hero.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="How I became the Hero"><i class="bx bx-plus"></i></a>
+                  <a href="how-i-became-the-hero-portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -645,7 +667,7 @@
         </div>
 
       </div>
-    </section>-->
+    </section>
     <!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
