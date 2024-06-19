@@ -33,7 +33,13 @@
 
 </head>
 
-
+<style>
+  .img-border {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+</style>
 
 <body>
 
@@ -68,10 +74,10 @@
     </div>
   </section><!-- End Hero -->
 
-  <main id="main">
+  <main id="main print-section">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about print-section">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -80,7 +86,7 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <!--<img src="assets/img/profile-img.jpg" class="img-fluid" alt="Profile image">-->
+            <img src="assets/img/my-photo-cropped.avif" class="img-fluid img-border" alt="Profile image">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>IT Expert &amp; Full-stack developer.</h3>
@@ -99,7 +105,7 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>25 November 2002 </span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Emilia Romagna, IT</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://nricciardi.github.io/">nricciadi.github.io</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://nricciardi.github.io/">nicolaricciardi.eu</a></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:ricciardincl@gmail.com">ricciardincl@gmail.com</a></span></li>
                   <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li> -->
                 </ul>
@@ -120,13 +126,13 @@
     
 
     <!-- ======= Experience Section ======= -->
-    <section id="experience" class="resume">
+    <section id="experience" class="resume print-section">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Experience</h2>
           <p>
-            Nicola has been creating IT products since his high school days in computer technologies.
+            Nicola has created and managed IT projects since his high school days.
           </p>
         </div>
 
@@ -138,7 +144,7 @@
               <h5>2022 - Present</h5>
               <p><em>McRegEm, Reggio Emilia, IT </em></p>
               <ul>
-                <li>Development of portals for the management of embedded IoT devices using Laravel and Angular</li>
+                <li>Web dashboard development for embedded IoT management devices using Laravel and Angular</li>
                 <li>Design and development of distributed systems with Kafka & Kafka Streams </li>
               </ul>
             </div>
@@ -147,7 +153,7 @@
               <h5>2018 - 2021</h5>
               <p><em>Italvision and other business activities, Reggio Emilia, IT</em></p>
               <ul>
-                <li>Development of a management portal</li>
+                <li>Development of a management dashboard</li>
                 <li>Creation of websites for commercial businesses</li>
                 <li>Little e-commerce developer and administrator</li>
               </ul>
@@ -159,8 +165,8 @@
               <h4>Mobile and Game Developer</h4>
               <h5>2018 - Present</h5>
               <ul>
-                <li>Development of mobile applications in Java and Kotlin (available on the Google Play Store)</li>
-                <li>Development of video games (available on the Play Store) </li>
+                <li>Development of mobile applications in Java and Kotlin</li>
+                <li>Development of video games using Godot </li>
               </ul>
             </div>
           </div>
@@ -170,7 +176,7 @@
     </section><!-- End Resume Section -->
 
     <!-- ======= Education Section ======= -->
-    <section id="education" class="resume">
+    <section id="education" class="resume print-section">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -186,7 +192,9 @@
               <h5>2021 - Present</h5>
               <p><em>UniMoRe, Modena, IT </em></p>
               <ul>
-                <li>As part of the design activities, there is a focus on developing a Digital Twin network and conducting an energy analysis of its usage</li>
+                <li>
+                  As part of the activities, there is a focus on developing a <em>Digital Twins</em> network and conducting an energy analysis of theirs usage
+                </li>
               </ul>
             </div>
             <div class="resume-item">
@@ -194,7 +202,9 @@
               <h5>2016 - 2021</h5>
               <p><em>Piero Gobetti, Scandiano, IT</em></p>
               <ul>
-                <li>Taking on the role of a project manager for the development of an automated ticketing system for the institution as part of the project activities</li>
+                <li>
+                  Taking on the role of a development team <em>project manager</em> during the development of an automated ticketing system for the institute
+                </li>
               </ul>
             </div>
           </div>
@@ -221,7 +231,7 @@
 
     <!-- ======= Skills Section ======= -->
     
-    <section id="skills" class="skills section-bg" data-aos="fade-up">
+    <section id="skills" class="skills section-bg print-section" data-aos="fade-up">
 
       <div class="container overlay">
 
@@ -518,7 +528,7 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <!-- <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -578,7 +588,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
@@ -664,14 +674,14 @@
             </div>
           </div> -->
 
-        </div>
+        <!-- </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact print-section">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
